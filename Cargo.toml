@@ -11,6 +11,10 @@ path = "src/pwd/main.rs"
 name = "opendef"
 path = "src/opendef/main.rs"
 
+[[bin]]
+name = "idcardextract"
+path = "src/custom/idcardextract/main.rs"
+
 
 [profile.release]
 opt-level = 'z'     # Optimize for size.
@@ -24,3 +28,4 @@ strip = true        # Strip symbols from binary*
 [dependencies]
 clap = { version = "3.1.18", features = ["derive"] }
 open = "2.1.2"
+idcard = "0.2"
